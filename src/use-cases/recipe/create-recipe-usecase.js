@@ -13,8 +13,7 @@ module.exports = class CreateRecipeUseCase {
     try {
       this.recipeValidator.Validate(recipeParam)
 
-      const recipeAlreadyExist = await this.readRecipeRepository.ReadRecipeByUserId(recipeParam)
-
+      const recipeAlreadyExist = await this.readRecipeRepository.ReadRecipeByRecipeDescription(recipeParam)
       if (recipeAlreadyExist) {
         return this.httpResponse.conflictError('Recipe Already Exist')
       }

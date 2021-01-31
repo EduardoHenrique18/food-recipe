@@ -10,7 +10,7 @@ module.exports = class DeleteRecipeUseCase {
     try {
       const deleteRecipe = await this.deleteRecipeRepository.DeleteRecipe(recipeParam.recipeId, userId)
       console.log(deleteRecipe)
-      return this.httpResponse.Ok(deleteRecipe)
+      return this.httpResponse.Ok({ number: deleteRecipe })
     } catch (error) {
       console.log(error)
       return this.httpResponse.ServerError()

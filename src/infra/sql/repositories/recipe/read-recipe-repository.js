@@ -35,4 +35,19 @@ module.exports = class ReadRecipeRepository {
       throw new ServerError()
     }
   }
+
+  async ReadRecipeByRecipeDescription (recipe) {
+    try {
+      const { description } = recipe
+
+      const read = await Recipe.findOne({
+        where: {
+          description
+        }
+      })
+      return read
+    } catch (err) {
+      throw new ServerError()
+    }
+  }
 }

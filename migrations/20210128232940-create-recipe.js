@@ -14,10 +14,10 @@ module.exports = {
       recipeYield: {
         type: Sequelize.STRING
       },
-      preparationMode: {
+      prepareMethod: {
         type: Sequelize.STRING
       },
-      ingredient: {
+      product: {
         type: Sequelize.STRING
       },
       userId: {

@@ -8,13 +8,13 @@ const Recipe = UserModel(Db, sequelize.DataTypes)
 module.exports = class UpdateRecipeRepository {
   async UpdateRecipe (recipe) {
     try {
-      const { description, preparationMethod, recipeYield, ingredient, recipeId } = recipe
+      const { description, prepareMethod, recipeYield, product, recipeId } = recipe
 
       return Recipe.update({
         description,
-        preparationMethod,
+        prepareMethod,
         recipeYield,
-        ingredient
+        product
       }, {
         where: { recipeId }
       })

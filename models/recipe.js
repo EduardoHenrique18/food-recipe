@@ -3,12 +3,13 @@ module.exports = (sequelize, DataTypes) => {
   const recipe = sequelize.define('recipe', {
     recipeId: {
       type: DataTypes.INTEGER,
-      primaryKey: true
+      primaryKey: true,
+      autoIncrement: true
     },
     description: DataTypes.STRING,
     recipeYield: DataTypes.STRING,
-    preparationMode: DataTypes.STRING,
-    ingredient: DataTypes.STRING,
+    prepareMethod: DataTypes.STRING,
+    product: DataTypes.STRING,
     userId: DataTypes.INTEGER
   }, {})
   recipe.associate = function (models) {

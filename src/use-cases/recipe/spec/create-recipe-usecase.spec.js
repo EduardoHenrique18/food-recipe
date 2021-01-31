@@ -117,9 +117,9 @@ describe('Create Recipe UseCase', () => {
     const { sut, recipeValidatorSpy } = makeSut()
     const httpRequest = {
       description: 'teste2e',
-      preparationMethod: 'preparationMethod2',
+      prepareMethod: 'prepareMethod2',
       recipeYield: 'recipeYield2',
-      ingredient: '22222222222222',
+      product: '22222222222222',
       recipeId: '1',
       userId: '1'
     }
@@ -131,9 +131,9 @@ describe('Create Recipe UseCase', () => {
     const { sut, readRecipeRepositorySpy } = makeSut()
     const httpRequest = {
       description: 'teste2e',
-      preparationMethod: 'preparationMethod2',
+      prepareMethod: 'prepareMethod2',
       recipeYield: 'recipeYield2',
-      ingredient: '22222222222222',
+      product: '22222222222222',
       recipeId: '1',
       userId: '1'
     }
@@ -152,9 +152,9 @@ describe('Create Recipe UseCase', () => {
       )
     const httpRequest = {
       description: 'teste2e',
-      preparationMethod: 'preparationMethod2',
+      prepareMethod: 'prepareMethod2',
       recipeYield: 'recipeYield2',
-      ingredient: '22222222222222',
+      product: '22222222222222',
       recipeId: '1',
       userId: '1'
     }
@@ -186,9 +186,9 @@ describe('Create Recipe UseCase', () => {
     for (const sut of suts) {
       const httpRequest = {
         description: 'teste2e',
-        preparationMethod: 'preparationMethod2',
+        prepareMethod: 'prepareMethod2',
         recipeYield: 'recipeYield2',
-        ingredient: '22222222222222',
+        product: '22222222222222',
         recipeId: '1',
         userId: '1'
       }
@@ -202,9 +202,9 @@ describe('Create Recipe UseCase', () => {
     const { sut } = makeSut()
     const httpRequest = {
       description: '2',
-      preparationMethod: 'preparationMethod2',
+      prepareMethod: 'prepareMethod2',
       recipeYield: 'recipeYield2',
-      ingredient: '22222222222222',
+      product: '22222222222222',
       recipeId: '1',
       userId: '1'
     }
@@ -217,9 +217,9 @@ describe('Create Recipe UseCase', () => {
     const { sut } = makeSut()
     const httpRequest = {
       description: 'teste2e',
-      preparationMethod: 'preparationMethod2',
+      prepareMethod: 'prepareMethod2',
       recipeYield: 'recipeYield2',
-      ingredient: '22222222222222',
+      product: '22222222222222',
       recipeId: '1',
       userId: '1'
     }
@@ -239,9 +239,9 @@ describe('Create Recipe UseCase', () => {
       )
     const httpRequest = {
       description: 'teste2e',
-      preparationMethod: 'preparationMethod2',
+      prepareMethod: 'prepareMethod2',
       recipeYield: 'recipeYield2',
-      ingredient: '22222222222222',
+      product: '22222222222222',
       recipeId: '1',
       userId: '1'
     }

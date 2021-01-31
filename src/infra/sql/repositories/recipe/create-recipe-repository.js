@@ -8,13 +8,13 @@ const Recipe = UserModel(Db, sequelize.DataTypes)
 module.exports = class CreateRecipeRepository {
   CreateRecipe (recipe) {
     try {
-      const { description, preparationMethod, recipeYield, ingredient, userId } = recipe
+      const { description, prepareMethod, recipeYield, product, userId } = recipe
 
       return Recipe.create({
         description,
-        preparationMethod,
+        prepareMethod,
         recipeYield,
-        ingredient,
+        product,
         userId
       })
     } catch (err) {

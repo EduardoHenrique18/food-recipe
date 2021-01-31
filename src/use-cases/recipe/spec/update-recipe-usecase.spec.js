@@ -79,9 +79,9 @@ describe('Update Recipe UseCase', () => {
     const { sut, recipeValidatorSpy } = makeSut()
     const httpRequest = {
       description: 'teste2e',
-      preparationMethod: 'preparationMethod2',
+      prepareMethod: 'prepareMethod2',
       recipeYield: 'recipeYield2',
-      ingredient: '22222222222222',
+      product: '22222222222222',
       recipeId: '1',
       userId: '1'
     }
@@ -93,9 +93,9 @@ describe('Update Recipe UseCase', () => {
     const { updateRecipeRepositorySpy, sut } = makeSut()
     const httpRequest = {
       description: 'teste2e',
-      preparationMethod: 'preparationMethod2',
+      prepareMethod: 'prepareMethod2',
       recipeYield: 'recipeYield2',
-      ingredient: '22222222222222',
+      product: '22222222222222',
       recipeId: '1',
       userId: '1'
     }
@@ -119,9 +119,9 @@ describe('Update Recipe UseCase', () => {
     for (const sut of suts) {
       const httpRequest = {
         description: 'teste2e',
-        preparationMethod: 'preparationMethod2',
+        prepareMethod: 'prepareMethod2',
         recipeYield: 'recipeYield2',
-        ingredient: '22222222222222',
+        product: '22222222222222',
         recipeId: '1',
         userId: '1'
       }
@@ -135,9 +135,9 @@ describe('Update Recipe UseCase', () => {
     const { sut } = makeSut()
     const httpRequest = {
       description: '2',
-      preparationMethod: '2',
+      prepareMethod: '2',
       recipeYield: '2',
-      ingredient: '2',
+      product: '2',
       recipeId: '1',
       userId: '1'
     }
@@ -150,9 +150,9 @@ describe('Update Recipe UseCase', () => {
     const { sut } = makeSut()
     const httpRequest = {
       description: 'teste2e',
-      preparationMethod: 'preparationMethod2',
+      prepareMethod: 'prepareMethod2',
       recipeYield: 'recipeYield2',
-      ingredient: '22222222222222',
+      product: '22222222222222',
       recipeId: '1',
       userId: '1'
     }
